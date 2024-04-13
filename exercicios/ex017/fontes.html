@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Com Google Fonts.</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        @font-face {
+            font-family: 'Magical';
+            src: url('Magical Celebration.ttf')format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+       @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Kaushan+Script&display=swap');
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: black;
+        }
+        h1 
+            {
+                font-family: "Kaushan Script", cursive;
+                font-weight: 600;
+                font-style: normal;
+        }
+        h2 {
+            font-family: "Kaushan Script", cursive;
+            font-weight: 600;
+            font-style: normal;
+                    }
+
+        
+
+                    
+    </style>
+    
+</head>
+<body>
+    <h1>Trabalhando Com Fontes.</h1>
+    <h2>Usando O Google Fonts.</h2>
+    <p>Podemos usar o Google Fonts para pegar mais opção de fontes, dessa forma já conseguimos pegar o link e o código css pronto para usar na nossa pagina html e css3.
+    </p>
+    <h2 style="font-family:Magical, Arial, Helvetica, sans-serif;font-weight: normal;font-style: normal;">Usando Fontes Externas Do Cliente. </h2>
+    <p>As configurações do google fonts para tirar duvidas estão em css local e da dafont.com vou deixar em inline para separar as configurações e não precisar gerar outro arquivo.</p>
+    <p>Um site bom para pesquisar fontes externas caso não tenha no google fonts é o <strong>dafont.com .</strong></p>
+    <p>Segue a baixo o código para usar fontes esternas baixadas para a mesma pasta do arquivo da pagina:
+        <pre>
+    @font-face {
+        font-family: 'Magical';
+        src: url('Magical Celebration.ttf')format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+        </pre>
+    </p>
+    <p>Cada tipo de arquivo terá um tipo diferente, no caso do tipo ttf será format('truetype') e no caso do otf será format('opentype').</p>
+</body>
+</html>

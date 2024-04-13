@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="et.ico" type="image/x-icon">
+    <title>Midías no HTML5.</title>
+</head>
+<body>
+    <h1>Diferentes tamanhos de imagens em HTML</h1>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagens diversas">
+    </picture>
+    <p>Para realizamos a troca de tamanho de imagem de acordo com o tamanho da tela vamos usar a seguinte configuração.
+    TAG <strong>"PICTURE"</strong>Dentro dela vamos usar a TAG <strong>IMG</strong> a imagem com o tamanho inicical, e também a TAG <strong>SOURCE</strong>media="(max-width:1050px )" colocando sempre 50 px a mais do tamanho da imagem,srcset="imagens/media.png" coloca-se a imagem que vai subistituir caso o tamnho da tela tenha mudandça, type=" image/png" e o tipo da imagem. 
+    Sempre respeitar a ordem do maior para o menor ou do menor para o menor.</p>
+    <H1>Trabalhando com midía em HTML.</H1>
+    <p>Vamos reproduzir audio em HTML.</p>
+    <audio src="Midias/audio_teste.mp3"controls autoplay></audio>
+    <p>Vamos reproduzir o Hungria hip hop.</p>
+    <audio src="Midias/cruzeiro-da-revoada.mp3"controls autoplay></audio>
+    <p>Essa é uma forma de adicionar audio porém ela pode ser limitada de acordo com o navegador ou formato do arquivo de audio. Usamos a TAG <strong>audio src="Midias/cruzeiro-da-revoada.mp3"controls autoplay audio</strong>SRC caminho do arquivo e controls e autoplay para liberar o play do arquivo.</p>
+    <h2>Mostrando a melhor maneira de reproduzir audio.</h2>
+    <audio preload="metadata"autoplay controls>
+        <source src="Midias/cruzeiro-da-revoada.mp3" type="audio/mpeg">
+        <source src="Midias/cruzeiro-da-revoada.ogg" type="audio/ogg">
+        <source src="Midias/cruzeiro-da-revoada.wav" type="audio/wav">
+        <p>Infelizmente não conseguimos reproduzir o arquivo.</p>
+        <a href="Midias/cruzeiro-da-revoada.mp3">clique aqui para baixar o arquivo mp3.</a>
+    </audio>
+    <p>Usamos a TAG "audio" dentro dela usamos a TAG "source" sendo "src" o caminho do arquivo e "type" o tipo do arquivo no caso de mp3 sera o unico tipo diferente do nome "audio/mpeg" para da o play fica dessa forma <strong>audio preload="metadata"autoplay controls</strong>.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo De Hover.</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        div > p {
+            display: none;
+        }
+        
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+        div:hover {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo De Hover.</h1>
+    <p>Exemplo texto escondido:</p>
+    <div>
+        Passe o mouse aqui:
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>No Exemplo acima, usamos uma <b>DIV</b> com um texto fora do paragrafo e um texto dentro do paragrafo, no css vamos configurar da seguinte forma:</p>
+    <p><b>div > p display: none;</b> Para indicar que queremos mexer apenas no paragrafo dentro da DIV. Display none para o paragrafo ficar invisivel.</p>
+    <p><b>div:hover > p display: block;</b> Dessa forma configuramos para o paragrafo aparecer apenas quando se passar o mouse em cima. Display block vai deixar visivel.</p>
+</body>
+</html>
