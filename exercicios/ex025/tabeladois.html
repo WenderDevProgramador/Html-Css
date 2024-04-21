@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        table {
+            width: 580px;
+            height: 580px;
+            border: solid 5px black;
+            border-collapse: collapse;
+
+        }
+        td {
+            border: solid 1px black;
+            padding: 6px;
+            text-align: center; /*Alinhamento horizontal*/
+        }
+
+        td.vertical {
+            vertical-align: bottom ; /*Alinhamento vertical*/
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segunda Tabela</h1>
+    <table>
+        <tr > <!--TR Linha-->
+            <td>A  1</td> <!--TD Dados-->
+            <td>A  2</td>
+            <td>A  3</td>
+        </tr>
+        <tr>
+            <td>B  1</td>
+            <td>B  2</td>
+            <td>B  3</td>
+        </tr>
+        <tr>
+            <td>C  1</td>
+            <td class="vertical">C  2</td>
+            <td class="vertical">C  3</td>
+        </tr>
+    </table>
+</body>
+</html>
