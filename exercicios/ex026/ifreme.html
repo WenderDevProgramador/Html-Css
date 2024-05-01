@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Iframe</title>
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        iframe {
+            width: 200px;
+            height: 200px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!--A configuração de tamanho do iframe o css vai sobre por a do html-->
+    <h1>Aprendendo usar iframe </h1>
+
+    <p>Acessando o site do CursoEmVídeo <iframe src="https://www.cursoemvideo.com" frameborder="0" height="400px" width="400px"></iframe> para aprender a programar.</p>
+    <p>Um exemplo de quando o site não aceita ifreme. Caso o site não aceite ifreme podemos deixar a opção de um link.
+         <iframe src="https://google.com" frameborder="0">
+            <a href="https://google.com" target="_blank">link</a>
+        </iframe>
+        
+</p>
+
+</body>
+</html>
