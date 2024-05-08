@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Formulario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulario.</h1>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <p>
+        Sempre que criar um formulario vamos usar a Tag <b>FORM </b>e dentro dela usaremos <b>input</b> do tipo <b>text </b>e para criar o botão de dados usaremos <b>input</b> <b>tipo </b><b>submit</b>.
+    </p>
+    <p>Para desligar ou ligar o auto preenchimento dos campos usamos <b>form autocomplete="off"</b></p>
+    <p>
+        Os dados do formulario sera enviado para um arquivo de linguagem de programação. Atraves de <b>action</b> dentro da tag <b>form</b>.
+    </p>
+    <p>Para fazer a ligação entre a caixa e o parametro vamos fazer uma etiqueta, será feito atraves do <b>name</b> e <b>id</b> usaremos a tag <b>label</b> e no parametro <b>for</b> colocamos o <b>id</b>.</p>
+</body>
+</html>
