@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div  {
+            
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 90px ;
+            text-align: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+
+        h1 , p {
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Faça seu login</h1>
+
+     <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="iusu">Usuario: </label>
+        <input type="text" name="usuario" id="iusu" required minlength="8" maxlength="25" size="16" placeholder="Nome Usuario" autocomplete="username">
+        </p>
+    
+
+
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="16" placeholder="senha min 8 letras" autocomplete="current-password">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+        
+    </div>
+
+    <p><br>
+        <b>form action="cadastro.php" method="post" autocomplete="on"</b> <br> <br>
+        <b>form</b> é a tag usada para formularios <br>
+        <b>action</b> nome do arquivo aonde os dados seram enviados <br>
+        <b>metho</b> é a forma como os dados seram enviados <br>
+        <b>autocomplete</b> é usado para que tenha o prenchimento automatico dentro da caixa.
+
+    </p>
+        <br><br>
+    <p>
+      <b>label for="iusu"</b>  <br><br>
+      <b>label</b> é usado para criar um vinculo entre a caixa input e oque o formulario pede <br>
+      <b>for</b> usamos para colocar o id do input para fazer a ligação entre os dois.
+    </p>
+    <br><br>
+    <p><b>input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="16" placeholder="senha min 8 letras" autocomplete="current-password"</b><br><br>
+    <b>input</b> para criamos a caixa para recolher os dados <br>
+    <b>type</b> será o tipo de dados que sera recolhido ex: text , passaword , number etc <br>
+    <b>name e id</b> são a identificação do input <br>
+    <b>required</b> para não deixar enviar os dados vazios <br>
+    <b>minlength e maxlength</b> aqui será definido o maximo e o minimo de caracteres permitidos no formulario
+    <br>
+    <b>placeholder</b> ira da uma dica dentro da caixa de input 
+    <br>
+    <b>autocomplete</b> será para o navegador completar a caixa de input <br>
+    <b>size</b> tamanho da caixa de acordo com a quantidade de caracteres<br><br>
+
+    <b>input type="reset" value="Limpar"</b><br>
+    input para criar botão , type será o tipo de botão value sera o nome do botão.
+
+
+
+
+
+</p>
+
+
+
+    
+      
+</body>
+</html>

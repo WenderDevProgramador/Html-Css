@@ -12,8 +12,8 @@
 </head>
 <body>
     <h1>Meu primeiro Formulario.</h1>
-    <form action="cadastro.php">
-        <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome"></p>
+    <form action="cadastro.php" method="post">
+        <p><label for="inome" >Nome:</label><input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
@@ -26,5 +26,10 @@
         Os dados do formulario sera enviado para um arquivo de linguagem de programação. Atraves de <b>action</b> dentro da tag <b>form</b>.
     </p>
     <p>Para fazer a ligação entre a caixa e o parametro vamos fazer uma etiqueta, será feito atraves do <b>name</b> e <b>id</b> usaremos a tag <b>label</b> e no parametro <b>for</b> colocamos o <b>id</b>.</p>
+
+    <p>Existe dois metodos para envio de formularios o parametro <b>method="post"</b> e <b>method="GET"</b>, o metodo usando o paramentro get em form ira aparecer os dados do formulario na url, o metodo usando o paramentro post em form ira tirar os dados enviados da url mas isso não quer dizer que estara seguro os seus dados. Para proteger realmete os dados precisamos criptografar e usar https.</p>
+
+    <p>So pode enviar dados atraves do <b>GET</b> até 3 mil bytes (Conseguimos enviar mais dados atraves do <b>POST</b>). Também não devemos usar para dados sensiveis como senhas e outros.</p>
+
 </body>
 </html>
