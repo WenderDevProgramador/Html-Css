@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Notas Aluno</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div  {
+            
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 90px ;
+            text-align: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+
+        h1 , p {
+            padding: 6px;
+        }
+        .butao {
+            
+            text-align: left;
+            height: 30px;
+            width: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cadastro Notas Aluno</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p class="butao">
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" autocomplete="name">
+            </p>
+            <p class="butao">
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" max="10" min="0" required placeholder="0 a 10" step="0.1" >
+            </p>
+        
+            <p class="butao">
+                <label for="imes">Período letivo:</label>
+                <input type="month" name="mes" id="imes" value="2024-05">
+            </p>
+            <p class="butao">
+                <label for="idia">Data da Prova:</label>
+                <input type="date" name="dia" id="idia" value="2024-05-11">
+            </p>
+            <p class="butao">
+                <label for="ihora">Hórario da prova:</label>
+                <input type="time" value="08:30">
+            </p>
+            <p class="butao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+    <br>
+    <p><b>max e min </b>Será usado para input do tipo númerico ele travara a caixa dentro do minimo e maximo de número permitido ex: se o min for 0 e o max 5 só aceita número entre esses dois valores.</p>
+    <p><b>placeholder</b> Esse atributo vai fazer aparecer uma mensagem dentro da caixa de input.</p>
+    <p><b>Step</b>É o parametro da caixa de número que fara a quantidade de quanto em quanto aumenta ou diminuir. Ex: 0.5, 0.1 , 1, 2 etc. </p>
+
+    <p><b>value</b> Quando é usada nos parametros de data ou número conseguimos colocar uma sujestão dentro da caixa.</p>
+</body>
+</html>
