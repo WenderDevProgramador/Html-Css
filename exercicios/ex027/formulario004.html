@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios com phone e e-mail</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div  {
+            
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 90px ;
+            text-align: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+
+        h1 , p {
+            padding: 6px;
+        }
+        .butao {
+            
+            text-align: left;
+            height: 30px;
+            width: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <h1>Formularios Com Email e Celular</h1>
+        <p>
+            <form action="cadastro.php" method="get" autocomplete="on">
+            <label for="iemail">E-MAIL:</label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
+            <p>
+                <label for="icelular">TELEFONE:</label>
+                <input type="tel" name="celular" id="icelular" pattern="^\(d{2})\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" autocomplete="tel">
+            </p>
+            </form>
+    </fieldset>
+    </p>
+
+
+</div>
+<p>
+    <b>fieldset</b> Usado para agrupar formularios do mesmo assunto como dados pessoais , dados finaanceiros etc.
+</p>
+<p>
+    <b>legend</b> Tag usada para dar um titulo ao agrupamento de fieldset.
+</p>
+</body>
+</html>

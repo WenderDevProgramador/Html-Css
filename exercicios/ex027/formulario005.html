@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+    
+  
+</head>
+<body>
+    <div>
+        <h1>Teste De Formulario</h1>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="Basquete" id="ibasquete"><label for="ibasquete">Basquete</label><br>
+
+                <input  type="checkbox" name="Futebol" id="ifutebol"><label for="ifutebol">Futebol</label><br>
+
+                <input  type="checkbox" name="Volei" id="ivolei"><label for="ivolei">Volei</label><br>
+
+                <input  type="checkbox" name="Natação" id="inatação"><label for="inatação">Natação</label><br>
+
+                <input  type="checkbox" name="Box" id="ibox"><label for="ibox">Box</label><br>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="ims"><label for="ims">Masculino</label>
+                <input type="radio" name="sexo" id="ifm"><label for="ifm">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>Deseja receber e-mails promocionais?</legend>
+                <input type="radio" name="receber" id="isim" checked ><label for="isim">Sim</label>
+                <input type="radio" name="receber" id="inao"><label for="inao">Não</label>
+
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+    <p><b>checked</b> E usado para deixar uma opção já pré definida.</p>
+</body>
+</html>
