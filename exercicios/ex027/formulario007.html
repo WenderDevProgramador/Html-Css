@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Sem Input</title>
+</head>
+<body>
+    <h1>Formularios Exemplo</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="iest">Estado:</label>
+        <select name="est" id="iest">
+            <option value="" selected> --- Escolha --- </option>
+
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio De Janeiro
+                </option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+<optgroup label="Região Centro Oeste">
+    
+                <option value="DF">Distritro Federal</option>
+                <option value="GO">Goias</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="TO">Tocantis</option>
+</optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande Do Norte</option>
+
+            </optgroup>
+        </select>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof" >
+        <datalist id="lstprof">
+            <option >Administrador</option>
+            <option >Desenvolvedor</option>
+            <option >Contador</option>
+            <option >Professor</option>
+            <option >Vendedor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imens">Mensagem:</label><br>
+        <textarea name="mens" id="imens" rows="10" cols="80">
+
+        </textarea>
+    </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <p>
+       <b>select name="est" id="iest"</b> Select é uma tag como o input usamos para colocar uma lista pronta aonde o usuario ira fazer a escolha.
+    </p>
+
+    <p>
+        <b>option value="" selected</b> É apoção de mensagem que vamos deixar dentro da caixa select.
+    </p>
+     
+    <p>
+        <b>optgroup label="Região Sudeste"</b> Essa tag vamos usar dentro de select com os option para separar a seleção em grupos.
+    </p>
+    <p>
+        <b>option value="PE"</b> É a opção que vamos deixar para o úsuario.
+    </p>
+
+    <p>
+        <b>input type="text" name="prof" id="iprof" list="lstprof"</b> Essa tag vamos usar no input text para que o úsuario digite um valor mas que tambem tenha uma opção de escolha. "list" precisa ser colocado para que façamos uma interligação com o datalist.
+    </p>
+    <p>
+        <b>datalist id="lstprof"</b> Vamos colocar a opção para o usuario escolher, dentro de datalist vem o option para colocar as opções não podemos nos esquecer do id para interligar com o input.
+    </p>
+</body>
+</html>
