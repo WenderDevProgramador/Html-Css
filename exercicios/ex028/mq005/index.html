@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="estilo/style.css" media="all">
+
+    <link rel="stylesheet" href="estilo/media-query.css" media="screen and (min-width:768px)">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickNave()">
@@ -47,6 +49,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut quidem repudiandae et. Eius totam ut, earum tempore reprehenderit eum cum, hic error autem perspiciatis nostrum quod maiores at 
             </p>
 
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium consequatur ratione quod illo molestias reprehenderit autem facere laboriosam, iste aperiam corporis id quidem minus dignissimos assumenda nobis unde adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, explicabo. Maxime, esse? Porro libero exercitationem alias aspernatur quasi nesciunt quisquam nostrum numquam eum ex quod, voluptates quam fuga enim quae?
+            </p>
+
         </article>
     </main>
     <footer>
@@ -56,6 +62,14 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickNave() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
