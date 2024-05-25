@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+main {
+    width: 90vw;
+    color: black;
+    text-shadow: none;
+    border: 2px solid;
+    ;
+}
+
+main::after {
+    content: 'Essa impressão foi feita para exercício curso em vídeo';
+    text-decoration: overline;
+}
+
+h1 {
+    color: black;
+    text-shadow: none;
+}
+
+#phone {display: none;}
+#print {display: block;}
+#pc {display: none;}
+#tv {display: none;}
+#tablet {display: none;}
