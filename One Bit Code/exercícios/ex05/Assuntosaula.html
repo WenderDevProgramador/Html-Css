@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios em HTML</h1>
+    <form action="http://google.com/search" method="get">
+        <label for="pesquisa">Pesquise no Google</label>
+        <input type="text" name="q" id="pesquisa">
+        <button type="submit">Pesquisar</button>
+    </form>
+    <br><br>
+    <hr>
+    <br><br>
+    <form method="get">
+        <label for="nome" >Nome:</label>
+        <input type="text" name="nome" id="nome" required placeholder="ex: Rodolfo">
+        <br><br>
+        <label for="email">E-MAIL:</label>
+        <input type="email" name="email" id="email" required placeholder="ex: rodolfo@mail.com">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <br><br>
+        <label for="Genero">Gênero:</label>
+        <input type="radio" name="Genero" id="masculino" value="M">
+        <!--No campo radio precisamos entender que o name vai definir para marcar apenas uma opção dessa forma precisamos colocar o mesmo name na seleção o valor VALUE vai definir o dado marcado que será enviado ao back end -->
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="Genero" id="feminino" value="F">
+        <label for="feminino">Feminino</label>
+        <br><br>
+        <!--Campo "checkbox" é parecido com o radio a diferença é que no "checkbox" podemos marcar varias opções-->
+        <label>Interesses:</label>
+        <input type="checkbox" name="interesses" id="backend" value="backend">
+        <label for="backend">Back-end</label>
+        <input type="checkbox" name="interesses" id="frontend" value="frontend">
+        <label for="backend">Front-end</label>
+        <input type="checkbox" name="interesses" id="mobile" value="mobile">
+        <label for="backend">Mobile</label>
+        <br><br>
+        <!--Campo de data-->
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="nascimento" id="data">
+        <br><br>
+        <!--Campo de arquivo-->
+        <label for="fotoperfil">Foto De Perfil</label>
+        <input type="file" name="foto" id="fotoperfil">
+
+        
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!--Campo de caixa de seleção-->
+        <label for="situação">Situação Atual:</label>
+        <select name="situação" id="situação">
+            <option value="" selected disabled>Selecione uma das opções</option> <!--Usamos a opção de valor vazio pois essa será a mensagem que irá aparecer no campo select, disabled para a opção não ser selecionada e select para aparecer no momento em que for carregada a pagina-->
+            <option value="estudante" >Estudando para me torna um programador</option>
+            <option value="estagiario">Estou atuando como estagiario</option>
+            <option value="programador">Já atuo como programador</option>
+        </select>
+        <br>
+        <hr>
+        <br>
+
+        <!--Campo de área de texto de mútiplas linhas-->
+        <label for="sobre">Sobre mim:</label>
+        <textarea name="sobre" id="sobre" cols="50" rows="10" placeholder="Fale um pouco sobre você..." minlength="100" maxlength="200"></textarea>
+        <br>
+        <br>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
