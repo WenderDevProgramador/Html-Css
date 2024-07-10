@@ -20,14 +20,28 @@
             max-width: 800px;
             border-radius: 10px;
             background-color: white;
-            padding: 10px;
+            padding: 20px;
+        }
+
+        #b {
+            text-align: center;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.593);
+            font-weight: bolder;
+            border-radius: 5px;
+            color:white
+            
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Formulário de Inscrição</h1>
-        <form action="" method="get">
+        <form action="#" method="get">
             <p>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
@@ -44,22 +58,25 @@
             <p><label for="atuação">Área de atuação:</label></p>
             
                 <p>
-                    <input type="radio" value="Desenvolvimento" name="atuação" id="Desenvolvimento">
+                    <input type="radio" value="Desenvolvimento" name="atuação" id="Desenvolvimento" required>
                     <label for="Desenvolvimento">Desenvolvimento</label>
-                    <input type="radio" name="atuação" id="Quality" value="Quality Assurance(QA)">
+                    <input type="radio" name="atuação" id="Quality" value="Quality Assurance(QA)" required>
                     <label for="Quality">Quality Assurance(QA)</label>
-                    <input type="radio" name="atuação" id="analise" value="Analise De Dados">
+                    <input type="radio" name="atuação" id="analise" value="Analise De Dados" required>
                     <label for="Analise">Analise De Dados</label>
+
+                    <input type="radio" name="atuação" id="infra" value="Infraestrutura" required>
+                    <label for="infra">Infraestrutura</label>
                 </p>
                 <p>
                     <label for="Observações">Observações:</label>
                     <textarea name="Observações" id="Observações" placeholder="Digite aqui observações adicionais" cols="30" rows="4"></textarea>
                 </p>
                 <p>
-                    <input type="checkbox" name="recebe" id="recebe">
+                    <input type="checkbox" name="recebe" id="recebe" value="sim">
                     <label for="recebe">Desejo receber novidades e ofertas por E-mail.</label>
                 </p>
-                <p>
+                <p id="b">
                     <button type="submit">Enviar</button>
                 </p>
         </form>
