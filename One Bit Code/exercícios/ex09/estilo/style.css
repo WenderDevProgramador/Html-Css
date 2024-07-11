@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    padding: 20px;
+    
+   
+}
+
+main {
+    max-width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.836);
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+}
